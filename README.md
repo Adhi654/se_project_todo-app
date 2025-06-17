@@ -43,4 +43,4 @@ Prettier — For consistent code formatting
 ## Deployment
 
 The project is hosted on **GitHub Pages**. You can view it here:  
-🔗 **[Live Project](https://adhi654.github.io/se_project_spots/)**
+🔗 **[Live Project](https://adhi654.github.io/se_project_todo-app/)**
