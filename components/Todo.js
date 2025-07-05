@@ -20,11 +20,6 @@ class Todo {
         this._data.completed
       );
     });
-
-    this._todoDeleteBtn.addEventListener("click", () => {
-      this._todoElement.remove();
-      this._todoElement = null;
-    });
   }
 
   _generateCheckboxEl() {

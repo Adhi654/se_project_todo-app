@@ -3,7 +3,7 @@ import { v4 as uuidv4 } from "https://jspm.dev/uuid";
 import { initialTodos, validationConfig } from "../utils/constants.js";
 import Todo from "../components/Todo.js";
 import FormValidator from "../components/FormValidator.js";
-import Section from "../components/section.js";
+import Section from "../components/Section.js";
 import PopupWithForm from "../components/PopupWithForm.js";
 import TodoCounter from "../components/TodoCounter.js";
 
@@ -24,8 +24,8 @@ function handleCheck(completed) {
 function handleDelete(completed) {
   if (completed) {
     todoCounter.updateCompleted(false);
-    todoCounter.updateTotal(false);
   }
+  todoCounter.updateTotal(false);
 }
 
 const generateTodo = (data) => {
