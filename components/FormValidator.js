@@ -58,9 +58,7 @@ class FormValidator {
       });
     });
   }
-  isValid() {
-    return !this._hasInvalidInput();
-  }
+
   resetValidation() {
     this._formEl.reset();
 
@@ -69,6 +67,9 @@ class FormValidator {
     });
 
     this._toggleButtonState();
+  }
+  isValid() {
+    return !this._hasInvalidInput();
   }
 
   enableValidation() {

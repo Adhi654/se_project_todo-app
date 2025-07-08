@@ -18,12 +18,11 @@ class Popup {
     document.removeEventListener("keydown", this._handleEscapeClose);
   }
   setEventListeners() {
-    this._popupcloseBtn.addEventListener("click", () => {
-      this.close();
-    });
-
     this._popupElement.addEventListener("click", (evt) => {
-      if (evt.target === this._popupElement) {
+      if (
+        evt.target === this._popupElement ||
+        evt.target === this._popupCloseBtn
+      ) {
         this.close();
       }
     });
